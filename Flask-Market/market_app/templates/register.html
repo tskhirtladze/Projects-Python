@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card bg-dark text-light border-secondary shadow-lg p-4" style="max-width: 420px; width:100%;">
+
+        <div class="text-center mb-4">
+            <h3 class="font-weight-light">Registration</h3>
+        </div>
+
+        <form method="POST">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.username.label(class="form-label") }}
+                {{ form.username(class="form-control bg-secondary text-light border-0", placeholder="Username") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.email_address.label(class="form-label") }}
+                {{ form.email_address(class="form-control bg-secondary text-light border-0", placeholder="Email Address") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.name.label(class="form-label") }}
+                {{ form.name(class="form-control bg-secondary text-light border-0", placeholder="Name") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.surname.label(class="form-label") }}
+                {{ form.surname(class="form-control bg-secondary text-light border-0", placeholder="Surname") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.password1.label(class="form-label") }}
+                {{ form.password1(class="form-control bg-secondary text-light border-0", placeholder="Password") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.password2.label(class="form-label") }}
+                {{ form.password2(class="form-control bg-secondary text-light border-0", placeholder="Confirm Password") }}
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">
+                Create Account
+            </button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

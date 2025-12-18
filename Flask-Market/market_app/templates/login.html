@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card bg-dark text-light border-secondary shadow-lg p-4" style="max-width: 420px; width:100%;">
+
+        <div class="text-center mb-4">
+            <h3 class="font-weight-light">Login</h3>
+        </div>
+
+        <form method="POST" class="form-signin" style="color:white">
+            {{ form.hidden_tag() }}
+
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="username") }}
+
+            <br>
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="password") }}
+
+            <br>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">
+                Login
+            </button>
+
+          <br>
+          <div class="text-center mb-4">
+               <p>Do not have an account?</p>
+               <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Registration</a>
+          </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

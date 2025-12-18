@@ -1,0 +1,96 @@
+body {
+    background-color: #212121;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+main {
+    padding: 30px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.market-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.market-table th, .market-table td {
+    border: 1px solid #555;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.market-table thead {
+    background-color: #333;
+}
+
+.market-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.market-table tbody tr:hover {
+    background-color: #555;
+}
+
+button.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+button.btn-info:hover {
+    background-color: #138496;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
